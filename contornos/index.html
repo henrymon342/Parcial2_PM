@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body { font-size: 12px; }
+
+button {
+  margin-bottom: 8px;
+  width: 150px;
+}
+
+.panelL {
+  width: 150px;
+  height: 400px;
+  display: inline-block;
+  border: 1px solid #dedede;
+}
+
+.panelR {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  border: 1px solid #dedede;
+}
+
+    </style>
+    <script src="https://www.marvinj.org/releases/marvinj-0.9.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    by <a href="https://www.marvinj.org">www.marvinj.org</a></br>
+<script src="https://www.marvinj.org/releases/marvinj-0.9.js"></script>
+
+<div style="display:flex; margin-top:5px;">
+  <div class="panelL">
+    <button onclick="grayScale()">Gray Scale</button><br/>
+    <button onclick="blackAndWhite()">Black and White</button><br/>
+    <button onclick="thresholding()">Thresholding</button><br/>
+    <button onclick="sepia()">Sepia</button><br/>
+    <button onclick="emboss()">Emboss</button><br/>
+    <button onclick="halftone()">Halftone</button><br/>
+    <button onclick="invert()">Invert</button><br/>
+    <button onclick="edgeDetection1()">Edge Detection 1</button><br/>
+    <button onclick="edgeDetection2()">Edge Detection 2</button><br/>
+    <button onclick="crop()">Crop</button><br/>
+    <button onclick="scale()">Scale</button><br/>
+    <button onclick="reset()">Reset</button><br/>
+  </div>
+  <div class="panelR">
+    <canvas id="canvas" width="496" height="400"></canvas><br/>
+  </div>
+</div>
+</body>
+</html>
